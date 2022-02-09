@@ -1,0 +1,567 @@
+.notificationBarContainer {
+  background-color: rgba(50, 52, 55, 0) !important;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.infoCardContainer--info-card-slide {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  margin: auto 10px;
+}
+
+/* .infoCardContainer--info-card-slide {
+  width: 100%;
+  height: 350px;
+  margin-top: 5px;
+} */
+.infoCardHeadline--info-card-slide {
+  color: #fdfdfd;
+  /* background: #adb5bbbd; */
+  /* padding: 10px; */
+  font-weight: 900;
+  font-variant: petite-caps;
+}
+.infoCardSubhead--info-card-slide {
+  color: #ffffff;
+  font-variant: unicase;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* .infoCardCallActionContainer--info-card-slide {
+  background-color: transparent;
+  color: black;
+} */
+
+.newsletter {
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  background: #323437;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.label--newsletter {
+  display: flex;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+  word-wrap: break-word;
+  max-width: 200px;
+  text-align: right;
+  position: relative;
+  left: 20px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup--newsletter {
+  display: flex;
+  color: #fff;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.buttonContainer--newsletter {
+  display: flex;
+  color: #fff;
+  font-size: 6px;
+  justify-content: center;
+  align-items: center;
+  background-color: #c32323;
+  padding-right: 25px;
+  margin-left: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer :global(.vtex-product-summary-2-x-SKUSelectorContainer) {
+  margin: 1rem 0;
+  padding-top: 26px;
+}
+
+@media only screen and (min-width: 640px) {
+  .form--newsletter {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    min-width: 800px;
+    font-size: 30px;
+  }
+  /* .newsletter .container {
+    padding: 140px;
+  } */
+  .newsletter .container--newsletter {
+    height: 80px;
+    /* padding: 17px 368px 15px 393px; */
+    padding: 10px;
+    background-color: #323437;
+    justify-content: center;
+  }
+  .label--link {
+    font-size: 25px;
+  }
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.searchBarContainer {
+  background-color: #070707;
+  position: absolute;
+  left: 0;
+  top: 6em;
+  z-index: 1;
+}
+@media screen and (min-width: 1025px) {
+  .searchBarContainer {
+    padding: 0.75em 3em;
+  }
+}
+/* @media screen and (max-width: 1024px) {
+  .searchBarContainer {
+    padding: 0.4em;
+  }
+} */
+
+.productBrand--quickview {
+  font-size: 30px;
+}
+
+.productDescriptionContainer--product {
+  color: gray;
+}
+
+.productDescriptionTitle--product {
+  font-weight: bold;
+}
+
+.container--menu-row {
+  min-width: 1000px;
+}
+/* =========Store Features========= */
+.imageElement--store-features-img {
+  border-radius: 80px;
+  padding: 30px 0px;
+}
+/* ============Corporate blog =========== */
+.imageElement--corporate-blog-image {
+  padding-bottom: 20px;
+}
+
+/* ===============Tablet================== */
+@media only screen and (min-width: 481px) and (max-width: 1025px) {
+  .inputGroup--newsletter {
+    min-width: auto;
+  }
+  .label--newsletter {
+    font-size: 18px;
+  }
+  .newsletter {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255, 255, 255) !important;
+  }
+  .form--newsletter {
+    min-width: auto !important;
+  }
+  .searchBarContainer{
+    top: 60px;
+  }
+}
+
+/* ================= Mobile ====================== */
+@media only screen and (max-width: 480px) {
+  .inputGroup--newsletter {
+    min-width: auto;
+    margin-left: 0px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .label--newsletter {
+    text-align: center;
+    left: 40px;
+  }
+  .buttonContainer--newsletter {
+    font-size: 2px !important;
+    margin-top: 10px;
+    margin-left: 0px !important;
+  }
+  .newsletter {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(255, 255, 255) !important;
+  }
+  .newsletter .container--newsletter {
+    padding: 10px 10px;
+  }
+  .notificationContent {
+    text-align: center;
+  }
+  .searchBarContainer {
+    top: 60px;
+  }
+  .productNameContainer--pdp-product-name {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .imageElement--car {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+.skuSelectorSubcontainer,
+.skuSelectorNameContainer,
+.skuSelectorTextContainer {
+  margin: 0;
+}
+.skuSelectorNameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.skuSelectorItemImageValue {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.galleryItem--list {
+  border: none;
+}
+.skuSelectorOptionsList {
+  margin-left: 10px;
+}
+
+.discountInsideContainer {
+  border-radius: 50%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+}
+
+.shippingContainer,
+.shippingTable {
+  margin-bottom: 20px;
+}
+
+.backToTopButtonContainer {
+  bottom: 70px;
+}
+
+/* modal-infocard */
+.infoCardContainer--info-card-sale {
+  padding: 0px;
+  background-color: #fdd601;
+}
+.infoCardHeadline--info-card-sale {
+  color: #731a8e;
+  font-weight: bolder;
+  font-variant: petite-caps;
+}
+.infoCardSubhead--info-card-sale {
+  color: #e8031f;
+  font-weight: bolder;
+  font-variant: petite-caps;
+}
+
+.imageElement--testIcons {
+  padding: 0px 5px;
+}
+.notificationBarInner {
+  padding-left: 50px;
+}
+.confirmationText--newsletter {
+  color: white;
+}
+.confirmationTitle--newsletter {
+  color: white;
+}
+/* ========= */
+.skuSelectorName {
+  display: inline-block;
+  min-width: 100px;
+}
+/* .skuSelectorOptionsList{
+justify-content: center;
+} */
+
+/* ================= New Nissan ============= */
+.logoImage--nissan-desktop-logo {
+  padding: 10px 25px;
+}
+.infoCardContainer--homepage-spot-banner {
+  color: #fff;
+}
+
+.headingLevel5--homepage-spot-banner,
+.headingLevel3--homepage-spot-banner,
+.paragraph--homepage-spot-banner {
+  color: #ffffff;
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.headingLevel5--homepage-spot-banner {
+  margin: 1rem 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.headingLevel3--homepage-spot-banner {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+  font-weight: bold;
+}
+.paragraph--homepage-spot-banner {
+  font-size: 16px;
+  font-weight: normal;
+}
+@media only screen and (min-width: 768px) {
+  .infoCardTextContainer--homepage-spot-banner {
+    width: 45%;
+    padding-top: 115px;
+    padding-bottom: 130px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .infoCardTextContainer--homepage-spot-banner {
+    width: 100%;
+    padding: 150px 0 20px;
+  }
+}
+/*----------------- PDP NISSAN ------------------------------*/
+
+.imageElement--image-container {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.productImagesThumb--pdp-img {
+  margin-bottom: 3px;
+}
+
+.productBrand--pdp-product-name {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171c20;
+}
+
+.price_listPriceLabel--product-price {
+  font-size: 12px !important;
+  color: #777;
+}
+.price_listPrice--product-price {
+  font-size: 14px !important;
+  color: #777;
+}
+
+.price_sellingPriceLabel--product-price {
+  font-size: 14px !important;
+  color: #c32323;
+}
+.price_sellingPrice--product-price {
+  font-size: 24px !important;
+  color: #c32323;
+}
+
+.container--product-desc {
+  margin: 0;
+  padding-left: 0;
+}
+
+.content--product-desc {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: #171c20;
+  padding-top: 0;
+}
+
+.productDescriptionTitle--product-desc {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.imageElement--car {
+  margin-left: 2rem;
+  margin-top: 80px;
+  width: 95% !important;
+  /* height: auto !important; */
+}
+
+.thumbImg--pdp-img {
+  object-fit: contain;
+  width: 140px;
+  height: 120px;
+}
+.imageElement--home-tile-image {
+  object-fit: cover;
+}
+
+.headingLevel5--category-landing-page-spot-banner
+{
+  color: #ffffff;
+  padding-top: 40px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.headingLevel3--category-landing-page-spot-banner
+{
+  color: #ffffff;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: sans-serif;
+  margin-top: 5px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.paragraph--category-landing-page-spot-banner
+{
+  color: #ffffff;
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: sans-serif;
+  padding-top: 30px;
+  font-size: 12px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+
+.imageElement--tire-prop-details-2{
+  background-color: gray;
+}
+.imageElement--left-col-manual{
+  min-height: 320px;
+}
+.imageElement--right-nismo-merchandise{
+  height: 500px;
+  margin-left: 50px;
+}
+.imageElement--build-your-nissan-img{
+  margin-top: 20px;
+}
+.imageElement--img-nismo-catalog{
+  margin: 20px;
+}
+@media only screen and (max-width: 768px) {
+.imageElement--omniparts-img{
+  width: fit-content;
+  height: 20px;
+  margin-bottom: -200px;
+}
+.imageElement--right-nismo-merchandise{
+  height: 200px;
+  width:300px;
+  margin-left: 20px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .imageElement--right-nismo-merchandise{
+    height: 300px;
+    margin-left: 50px;
+  }
+}
+
+.imageElement--omniparts-img{
+  width: 500px;
+  height: 300px;
+  margin-bottom: -200px;
+}
+.imageElement--japan-parts-img{
+  margin-top: 10px;
+}
+.imageElement--nissan-tire-store-img{
+  margin-top: 20px;
+}

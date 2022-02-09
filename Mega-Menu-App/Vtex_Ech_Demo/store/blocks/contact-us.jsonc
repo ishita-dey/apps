@@ -1,0 +1,126 @@
+{
+  "store.custom#contact-us": {
+    "blocks": ["flex-layout.row#form"]
+  },
+  "flex-layout.row#form": {
+    "children": ["flex-layout.col#form"],
+    "props": {
+      "blockClass": "contact-us-form"
+    }
+  },
+  "flex-layout.col#form": {
+    "children": ["form#contact-us"],
+    "props": {
+      "blockClass": "contact-us-form"
+    }
+  },
+  "form#contact-us": {
+    "props": {
+      "entity": "ContactUs",
+      "schema": "user",
+      "blockClass": "contact-form"
+    },
+    "children": [
+      "rich-text#contactUsformTitle",
+      "form-input.text#userName",
+      "rich-text#input-spacer",
+      "form-input.text#userEmail",
+      "rich-text#input-spacer",
+      "form-input.text#userPhone",
+      "rich-text#input-spacer",
+      "form-input.text#subject",
+      "rich-text#input-spacer",
+      "form-input.textarea#question",
+      "rich-text#input-spacer",
+      "form-submit#contactUsform"
+    ],
+    "blocks": ["form-success#contactUs"]
+  },
+  "form-success#contactUs": {
+    "children": ["rich-text#successSubmit"]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Thank You, we will reach you shortly!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "contact-us-submit"
+    }
+  },
+
+  "flex-layout.row#ContactUsData": {
+    "children": ["ContactUsData"],
+    "props": {
+      "blockClass": "contact-us-data"
+    }
+  },
+  "rich-text#contactUsformTitle": {
+    "props": {
+      "text": "Contact Us",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "contact-us"
+    }
+  },
+  "rich-text#spacer": {
+    "props": {
+      "text": "Agree to continue ",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "10px",
+      "blockClass": "contact-us-spacer"
+    }
+  },
+
+  "form-input.text#userName": {
+    "props": {
+      "pointer": "#/properties/name",
+      "label": "Name",
+      "blockClass": "contact-us"
+    }
+  },
+  "form-input.text#userEmail": {
+    "props": {
+      "pointer": "#/properties/email",
+      "label": "Email",
+      "blockClass": "contact-us"
+    }
+  },
+  "form-input.text#userPhone": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "label": "Phone No.",
+      "blockClass": "contact-us"
+    }
+  },
+
+  "form-input.text#subject": {
+    "props": {
+      "pointer": "#/properties/subject",
+      "label": "Subject",
+      "blockClass": "contact-us"
+    }
+  },
+  "form-input.textarea#question": {
+    "props": {
+      "pointer": "#/properties/question",
+      "label": "Question",
+      "blockClass": "contact-us"
+    }
+  },
+
+  "form-submit#contactUsform": {
+    "props": {
+      "label": "Submit"
+    }
+  },
+  "rich-text#input-spacer": {
+    "props": {
+      "text": "input spacer ",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "8px",
+      "blockClass": "contact-us-input-spacer"
+    }
+  }
+}

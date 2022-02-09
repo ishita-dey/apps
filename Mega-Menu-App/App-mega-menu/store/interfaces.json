@@ -1,0 +1,12 @@
+{
+  "megamenu-app": {
+    "component": "MegaMenuApp",
+    "allowed": "*",
+    "composition": "children"
+  },
+  "DropdownItems": {
+    "component": "Navbar",
+    "allowed": "*",
+    "composition": "children"
+  }
+}

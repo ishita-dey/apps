@@ -1,0 +1,22 @@
+{
+  "vendor": "echidna",
+  "name": "megamenuapp",
+  "version": "0.0.1",
+  "title": "Mega-menu-app",
+  "description": "Mega-menu-app",
+  "builders": {
+    "assets": "0.x",
+    "styles": "2.x",
+    "store": "0.x",
+    "sitemap": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.css-handles": "0.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

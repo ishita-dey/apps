@@ -1,0 +1,520 @@
+{
+  "store.home": {
+    "blocks": [
+      "notification.bar",
+      "megamenu-app",
+      // "info-card#homepage-main-banner",
+      // "responsive-layout.desktop#home",
+      // "responsive-layout.mobile#home",
+      // // "slider-layout#slides", //caraousal
+      // "flex-layout.row#demo", // categories
+      // /* You can make references to blocks defined in other files.
+      //  * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      // "__fold__.experimentalLazyAssets",
+      // "rich-text#nissan",
+      // //"info-card#shelf", // view all collections
+      // "flex-layout.row#shelf",
+      // "newsletter" // view all shelf
+      "back-to-top-button",
+      "modal-trigger#sale"
+      
+    ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login",
+      "defaultContentVisibility": "hidden"
+    }
+  },
+
+  "megamenu-app": {
+    "props":{
+
+      "navItems":[{
+        "id": 1,
+        "title":"Products",
+        "path": "/products"
+        
+      },
+        {
+          "id": 2,
+              "title": "Inspiração",
+              "path": "/inspiration"
+        },
+        {
+          "id": 3,
+              "title": "Supports",
+              "path": "/supports"
+        }, 
+        {
+          "id": 4,
+              "title": "Blog",
+              "path": "/blog"
+        }
+      ]    
+    },
+    "children":["DropdownItems"]
+  },
+
+  "DropdownItems":{
+    "props":{
+      "items": [
+        {
+          "title": "Running",
+          "path": "/running",
+          "content": [
+            { "name": "Polar Vantage V2", "link": "/running" },
+            { "name": "Polar Grit X Pro", "link": "/running" },
+            { "name": "Polar Grit X", "link": "/running" },
+            { "name": "Polar Vantage M2", "link": "/running" }
+          ]
+        },
+        {
+          "title": "Multisport & Triathlon",
+          "path": "/multisport-triathlon",
+          "content": [
+            { "name": "Polar Vantage V2", "link": "/multisport" },
+            { "name": "Polar Grit X Pro", "link": "/multisport" },
+            { "name": "Polar Grit X", "link": "/multisport" },
+            { "name": "Polar Vantage M2", "link": "/multisport" }
+          ]
+        },
+        {
+          "title": "Cycling",
+          "path": "/cycling",
+          "content": [
+            { "name": "Polar Vantage V2", "link": "/cycling" },
+            { "name": "Polar Grit X Pro", "link": "/cycling" },
+            { "name": "Polar Grit X", "link": "/cycling" },
+            { "name": "Polar Vantage M2", "link": "/cycling" }
+          ]
+        },
+        {
+          "title": "Yoga",
+          "path": "/yoga",
+          "content": [
+            { "name": "Polar Vantage V2", "link": "/yoga" },
+            { "name": "Polar Grit X Pro", "link": "/yoga" },
+            { "name": "Polar Grit X", "link": "/yoga" },
+            { "name": "Polar Vantage M2", "link": "/yoga" }
+          ]
+        }
+         ]
+    }
+  
+    
+  },
+  //----------------------------- A-spot Banner ------------------------------------------
+  "info-card#homepage-main-banner": {
+    "props": {
+      "id": "homepage-main-banner",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "textMode": "'rich-text'",
+      "imageUrl": "assets/home/nissan-aspot.jpg",
+      "headline": "##### NISSAN PARTS & ACCESSORIES ONLINE \n ### GENUINE NISSAN PARTS, ACCESSORIES, AND MERCHANDISE ONLINE",
+      "subhead": "Nissan promises innovation that’s guaranteed to excite. Maintain your Nissan with Genuine Nissan Parts from Nissan Parts & Accessories Online and ensure a smarter and more thrilling ride.",
+      "blockClass": "homepage-spot-banner",
+      "textAlignment": "left",
+      "callToActionMode": "none"
+    }
+  },
+
+  //------------------------------ Tab and accordion structure -------------------------
+  "responsive-layout.desktop#home": {
+    "children": ["flex-layout.row#homepage-car-model", "car-model-tabs"]
+  },
+  "responsive-layout.mobile#home": {
+    "children": ["flex-layout.row#homepage-car-model", "car-model-accordion"]
+  },
+  "flex-layout.row#homepage-car-model": {
+    "props": {
+      "blockClass": "homePageModelFlex",
+      "colSizing": "auto",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#homepage-model-left"
+      // "flex-layout.col#homepage-model-right"
+    ]
+  },
+  "flex-layout.col#homepage-model-left": {
+    "children": ["rich-text#homePageModel"],
+    "props": {
+      "blockClass": "richTextColLeft"
+    }
+  },
+  // "flex-layout.col#homepage-model-right": {
+  //   "children": ["modal-trigger#vin-number"],
+  //   "props": {
+  //     "blockClass": "richTextColRight"
+  //   }
+  // },
+  "rich-text#homePageModel": {
+    "props": {
+      "text": "### Select a Model",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  // "modal-trigger#vin-number": {
+  //   "children": ["flex-layout.row#vinNumberRow", "modal-layout#homePageVin"]
+  // },
+  // "flex-layout.row#vinNumberRow": {
+  //   "children": ["flex-layout.col#vinIcon", "flex-layout.col#vinText"],
+  //   "props": {
+  //     "colSizing": "auto",
+  //     "fullWidth": false,
+  //     "blockClass": "vinNumberTextContainer"
+  //   }
+  // },
+  // "flex-layout.col#vinIcon": {
+  //   "children": ["image#vinIcon"],
+  //   "props": {
+  //     "blockClass": "iconColumn"
+  //   }
+  // },
+  // "image#vinIcon": {
+  //   "props": {
+  //     "src": "assets/home/search-by-vin.png",
+  //     "width": "28px",
+  //     "height": "28px"
+  //   }
+  // },
+  // "flex-layout.col#vinText": {
+  //   "children": ["rich-text#homePageVin", "icon-caret#vinText"],
+  //   "props": {
+  //     "blockClass": "vinTextCol"
+  //   }
+  // },
+  // "icon-caret#vinText": {
+  //   "props": {
+  //     "orientation": "right",
+  //     "blockClass": "caret-vin-num"
+  //   }
+  // },
+  // "rich-text#homePageVin": {
+  //   "props": {
+  //     "text": "##### Search by VIN",
+  //     "blockClass": "vinText"
+  //   }
+  // },
+  // "modal-layout#homePageVin": {
+  //   "children": ["modal-header", "flex-layout.row#vin-form"]
+  // },
+  // "flex-layout.row#vin-form": {
+  //   "children": ["flex-layout.col#form"]
+  // },
+  // "flex-layout.col#vin-form": {
+  //   "children": [
+  //     // "rich-text#vinText",
+
+  //   ]
+  // },
+  //-----------------------------caraousal------------------------------------------
+
+  "slider-layout#slides": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "fullWidth": true,
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      "info-card#slide1",
+      "info-card#slide2",
+      "info-card#slide3",
+      "video#banner-homepage"
+    ]
+  },
+
+  "info-card#slide1": {
+    "props": {
+      "imageUrl": "assets/slider0.jpg",
+      "isFullModeStyle": true,
+      "headline": "Welcome to Zirtuen!",
+      "subhead": "stay home & shop online",
+      "callToActionMode": "button",
+      "callToActionText": "See Collection",
+      "callToActionUrl": "/sales",
+      "textPosition": "center",
+      "blockClass": "info-card-slide"
+    }
+  },
+
+  "info-card#slide2": {
+    "props": {
+      "imageUrl": "assets/slider2.jpg",
+      "headline": "Electronics Appliances",
+      "subhead": "Quality Products with Reliability",
+      "isFullModeStyle": true,
+      "callToActionMode": "link",
+      "callToActionText": "Shop Now",
+      "callToActionUrl": "/electronics",
+      "textPosition": "center",
+      "blockClass": "info-card-slide"
+    }
+  },
+  "info-card#slide3": {
+    "props": {
+      "imageUrl": "assets/slider1.jpg",
+      "callToActionMode": "link",
+      "callToActionText": "Shop Now",
+      "callToActionUrl": "/major-appliances",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "blockClass": "info-card-slide"
+    }
+  },
+  "video#banner-homepage": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=8-KpLN57wOc",
+      "width": "100%",
+      "blockClass": "slider-videoContainer"
+    }
+  },
+  //------------------category--------------------------------------------------------
+
+  "flex-layout.row#demo": {
+    "children": ["flex-layout.col#left", "flex-layout.col#right"],
+    "props": {
+      "blockClass": "categories-row"
+    }
+  },
+
+  "flex-layout.col#left": {
+    "children": ["stack-layout#nissanCat1", "stack-layout#nissanCat2"]
+  },
+
+  //-----------------category 1-------------------------------------------
+
+  "stack-layout#nissanCat1": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#nissanCat1", "link#cta-nissanCat1"]
+  },
+  "image#nissanCat1": {
+    "props": {
+      "src": "assets/home/home-categoy-tile-1.jpg",
+      "width": "100%",
+      "height": "260px",
+      "blockClass": "home-tile-image"
+    }
+  },
+
+  "link#cta-nissanCat1": {
+    "props": {
+      "blockClass": "cta-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "medium"
+      },
+      "href": "/accessories/engine-accessories",
+      "label": "ENGINE ACCESSORIES"
+    },
+    "children": ["icon-caret#rightHome"]
+  },
+  "icon-caret#rightHome": {
+    "props": {
+      "orientation": "right",
+      "blockClass": "caret-home"
+    }
+  },
+  //--------------------------category 2--------------------------------------------
+
+  "stack-layout#nissanCat2": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#nissanCat2", "link#cta-nissanCat2"]
+  },
+
+  "image#nissanCat2": {
+    "props": {
+      "src": "assets/home/home-categoy-tile-3.jpg",
+      "width": "100%",
+      "height": "460px",
+      "blockClass": "home-tile-image"
+    }
+  },
+  "link#cta-nissanCat2": {
+    "props": {
+      "blockClass": "cta-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "medium"
+      },
+      "href": "/accessories/ac-electronics-accessories",
+      "label": "AC/Electronics Accessories"
+    },
+    "children": ["icon-caret#rightHome"]
+  },
+
+  "flex-layout.col#right": {
+    "children": ["stack-layout#nissanCat3", "stack-layout#nissanCat4"]
+  },
+
+  //-----------------category 3-------------------------------------------
+
+  "stack-layout#nissanCat3": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#nissanCat3", "link#cta-nissanCat3"]
+  },
+  "image#nissanCat3": {
+    "props": {
+      "src": "assets/home/home-categoy-tile-2.jpg",
+      "width": "100%",
+      "height": "460px",
+      "blockClass": "home-tile-image"
+    }
+  },
+
+  "link#cta-nissanCat3": {
+    "props": {
+      "blockClass": "cta-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primay",
+        "size": "medium"
+      },
+      "href": "/accessories/truck-and-towing",
+      "label": "BIKE RACK Accessories"
+    },
+    "children": ["icon-caret#rightHome"]
+  },
+
+  //-----------------category 4-------------------------------------------
+
+  "stack-layout#nissanCat4": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#nissanCat4", "link#cta-nissanCat4"]
+  },
+
+  "image#nissanCat4": {
+    "props": {
+      "src": "assets/home/home-categoy-tile-4.jpg",
+      "width": "100%",
+      "height": "260px",
+      "blockClass": "home-tile-image"
+    }
+  },
+  "link#cta-nissanCat4": {
+    "props": {
+      "blockClass": "cta-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "medium"
+      },
+      "href": "/accessories/interior-accessories",
+      "label": "Interior Accessories"
+    },
+    "children": ["icon-caret#rightHome"]
+  },
+
+  //--------------------------------View All Collections---------------------------
+
+  "info-card#shelf": {
+    "props": {
+      "id": "info-card-shelf",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "headline": "New Arrivals",
+      "callToActionText": "View All",
+      "callToActionUrl": "/sales",
+      "blockClass": "shelfTitle",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#nissan": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Featured Parts And Accessories",
+      "font": "t-heading-5",
+      "blockClass": "summarySelfHeader"
+    }
+  },
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#summary"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+      //"collection": "142"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  // back to top button
+  "back-to-top-button": {
+    "props": {
+      "displayThreshold": 100,
+      "display": "caret-icon"
+    }
+  },
+  // modal
+  "modal-trigger#sale": {
+    "children": ["modal-layout#sale"],
+    "props": {
+      "trigger": "load-session"
+    }
+  },
+
+  "modal-layout#sale": {
+    "children": ["modal-header#sale", "info-card#modal-content"]
+  },
+  "modal-header#sale": {
+    "props": {
+      "showCloseButton": true,
+      "iconCloseSize": 20
+    }
+  },
+  "info-card#modal-content": {
+    "props": {
+      "id": "info-card-sale",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://img.freepik.com/free-vector/diwali-sale-banner-poster-design-festival-season_1017-15257.jpg?size=338&ext=jpg",
+      "headline": "Festival Offers",
+      "subhead": "HURRY! Limited time only",
+      "callToActionText": "SHOP NOW",
+      "callToActionUrl": "/sales",
+      "blockClass": "info-card-sale",
+      "textAlignment": "center"
+    }
+  }
+}

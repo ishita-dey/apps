@@ -1,0 +1,110 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+  .container--summary {
+    min-height: 450px;
+  }
+  .container--searchSummaryCard {
+    min-height: 500px;
+  }
+}
+
+.nameContainer {
+  justify-content: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/* 
+.nameContainer--productNameGrid {
+  width: 260px;
+  height: 22px;
+} */
+
+.brandName--productNameGrid {
+  color: #000 !important;
+  font-size: 16.5px !important;
+  margin-bottom: 5px;
+  overflow: hidden !important;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2e2e2e;
+}
+/* 
+.container {
+  text-align: start;
+  height: 440px;
+} */
+
+.container--summary {
+  border-radius: 0 !important;
+  height: 440px !important;
+  border: 1px solid rgb(204, 203, 203);
+  width: 300px !important;
+}
+
+/* .imageContainer {
+  text-align: center;
+  width: 240px;
+  height: 220px;
+  object-fit: contain;
+} */
+
+.image {
+  border-radius: 0.25rem;
+}
+
+/* .imageContainer:hover {
+ opacity: 0.6;
+ position: relative;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ height: 100%;
+ width: 100%;
+ transition: .5s ease;
+ background-color: #2E2E2E;
+} */
+
+/* .element--listLayout{
+  border-bottom: 1px solid black;
+    height: 275px;
+} */
+
+.containerNormal--listLayout {
+  height: 250px !important;
+}
+
+/* ------------------Sales Page------------------------------- */
+.container--discountCard {
+  border: 1px solid rgb(204, 203, 203);
+  height: 490px !important ;
+  border-radius: 0;
+  width: 300px !important;
+}
+
+.containerNormal--discountCard {
+  height: 490px !important;
+}
+
+/* .container--comparison-page-summary {
+  text-align: center;
+} */

@@ -1,0 +1,132 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": ["menu-item#category-account"]
+  },
+  "menu-item#category-account": {
+    "props": {
+      "id": "menu-item-category-account",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "My Account",
+        "text": "My Account"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-account"]
+  },
+  "vtex.menu@2.x:submenu#category-account": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-account"]
+  },
+  "vtex.menu@2.x:menu#category-account": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-account-my-account",
+      "menu-item#category-account-my-wishlist",
+      "menu-item#category-account-my-cart",
+      "menu-item#category-account-checkout",
+      "menu-item#category-account-register",
+      "menu-item#category-account-login"
+    ]
+  },
+  "menu-item#category-account-my-account": {
+    "props": {
+      "id": "menu-item-category-account-my-account",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my---account/my-account/",
+        "noFollow": false,
+        "tagTitle": "My Account",
+        "text": "My Account"
+      }
+    }
+  },
+  "menu-item#category-account-my-wishlist": {
+    "props": {
+      "id": "menu-item-category-account-my-wishlist",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my---account/my-wishlist/",
+        "noFollow": false,
+        "tagTitle": "My Wishlist",
+        "text": "My Wishlist"
+      }
+    }
+  },
+  "menu-item#category-account-my-cart": {
+    "props": {
+      "id": "menu-item-category-account-my-cart",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my---account/my-cart/",
+        "noFollow": false,
+        "tagTitle": "My Cart",
+        "text": "My Cart"
+      }
+    }
+  },
+  "menu-item#category-account-checkout": {
+    "props": {
+      "id": "menu-item-category-account-checkout",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my---account/checkout/",
+        "noFollow": false,
+        "tagTitle": "Checkout",
+        "text": "Checkout"
+      }
+    }
+  },
+  "menu-item#category-account-register": {
+    "props": {
+      "id": "menu-item-category-account-register",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my---account/register/",
+        "noFollow": false,
+        "tagTitle": "Register",
+        "text": "Register"
+      }
+    }
+  },
+  "menu-item#category-account-login": {
+    "props": {
+      "id": "menu-item-category-account-login",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my---account/login/",
+        "noFollow": false,
+        "tagTitle": "Login",
+        "text": "Login"
+      }
+    }
+  }
+}

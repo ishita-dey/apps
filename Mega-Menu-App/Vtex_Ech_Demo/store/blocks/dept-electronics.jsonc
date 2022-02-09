@@ -1,0 +1,9 @@
+{
+    "store.custom#electronics": {
+        "blocks": [
+        "electronics",
+        "back-to-top-button"
+        ]
+    }
+
+}

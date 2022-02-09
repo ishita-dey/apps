@@ -1,0 +1,150 @@
+{
+  "vtex.menu@2.x:menu#main-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#category-electronics",
+      "menu-item#category-major-appliances",
+      "menu-item#category-small-appliances",
+      "menu-item#category-test",
+      "menu-item#sales"
+    ]
+  },
+  "menu-item#category-electronics": {
+    "props": {
+      "id": "menu-item-category-electronics",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/electronics",
+        "noFollow": false,
+        "tagTitle": "Electronics",
+        "text": "Electronics"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-electronics"]
+  },
+  "vtex.menu@2.x:submenu#category-electronics": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-electronics"]
+  },
+  "vtex.menu@2.x:menu#category-electronics": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["electronics-menu"]
+  },
+
+  "menu-item#category-major-appliances": {
+    "props": {
+      "id": "menu-item-category-major-appliances",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/major-appliances",
+        "noFollow": false,
+        "tagTitle": "Major Appliances",
+        "text": "Major Appliances"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-major-appliances"]
+  },
+  "vtex.menu@2.x:submenu#category-major-appliances": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["majorApp-menu"]
+  },
+
+  "menu-item#category-small-appliances": {
+    "props": {
+      "id": "menu-item-category-small-appliances",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/small-appliances",
+        "noFollow": false,
+        "tagTitle": "Small-Appliances",
+        "text": "Small-Appliances"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-small-appliances"]
+  },
+  "vtex.menu@2.x:submenu#category-small-appliances": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-small-appliances"]
+  },
+  "vtex.menu@2.x:menu#category-small-appliances": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["smallApp-menu"]
+  },
+
+  "menu-item#category-test": {
+    "props": {
+      "id": "menu-item-category-test",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Test",
+        "text": "Test"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-test"]
+  },
+  "vtex.menu@2.x:submenu#category-test": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-test"]
+  },
+  "vtex.menu@2.x:menu#category-test": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": []
+  },
+
+  "menu-item#sales": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sales",
+        "noFollow": true,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#sale"]
+  },
+  "vtex.menu@2.x:submenu#sale": {
+    "props": {
+      "width": "auto"
+    }
+  }
+}

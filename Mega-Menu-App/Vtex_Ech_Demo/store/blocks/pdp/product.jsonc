@@ -1,0 +1,606 @@
+{
+  "store.product.product-comparison": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.phone",
+      "responsive-layout.tablet",
+      "back-to-top-button"
+    ],		
+    "children": [		
+      "product-comparison-drawer"	
+      // "product-comparison-block.selector"
+    ]
+  },
+  "responsive-layout.tablet": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      "tab-layout#product",
+      "flex-layout.row#banner-car",
+      "shelf.relatedProducts"
+    ]
+  },
+  "responsive-layout.phone": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      "disclosure-layout-group#tablayout",
+      "flex-layout.row#banner-car",
+      "shelf.relatedProducts"
+    ]
+  },
+  "disclosure-layout-group#tablayout": {
+    "children": [
+      "disclosure-layout#details",
+      "disclosure-layout#additionalInfo",
+      "disclosure-layout#reviews"
+    ]
+  },
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up",
+      "blockClass": "state-indicator"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down",
+      "blockClass": "disclosure-pdp"
+    }
+  },
+  "icon-caret#up": {
+    "props": {
+      "orientation": "up",
+      "blockClass": "disclosure-pdp"
+    }
+  },
+  "disclosure-layout#details": {
+    "children": ["disclosure-trigger#details", "disclosure-content#details"]
+  },
+  "disclosure-trigger#details": {
+    "children": ["rich-text#details", "disclosure-state-indicator"],
+    "props": {
+      "blockClass": "details",
+      "as": "div"
+    }
+  },
+  "disclosure-content#details": {
+    "children": ["product-description#tab"],
+    "props": {
+      "blockClass": "details",
+      "as": "div"
+    }
+  },
+  "rich-text#details": {
+    "props": {
+      "text": "Details"
+    }
+  },
+  "disclosure-layout#additionalInfo": {
+    "children": [
+      "disclosure-trigger#additionalInfo",
+      "disclosure-content#additionalInfo"
+    ]
+  },
+  "disclosure-trigger#additionalInfo": {
+    "children": ["rich-text#additionalInfo", "disclosure-state-indicator"],
+    "props": {
+      "blockClass": "additionalInfo",
+      "as": "div"
+    }
+  },
+  "disclosure-content#additionalInfo": {
+    "children": ["product-specifications"],
+    "props": {
+      "blockClass": "additionalInfo",
+      "as": "div"
+    }
+  },
+  "rich-text#additionalInfo": {
+    "props": {
+      "text": "Additional Info"
+    }
+  },
+  "disclosure-layout#reviews": {
+    "children": ["disclosure-trigger#reviews", "disclosure-content#reviews"]
+  },
+  "disclosure-trigger#reviews": {
+    "children": ["rich-text#reviews", "disclosure-state-indicator"],
+    "props": {
+      "blockClass": "reviews",
+      "as": "div"
+    }
+  },
+  "disclosure-content#reviews": {
+    "children": ["product-reviews"],
+    "props": {
+      "blockClass": "reviews",
+      "as": "div"
+    }
+  },
+  "rich-text#reviews": {
+    "props": {
+      "text": "Reviews"
+    }
+  },
+  //----------------PDP NISSAN-------------------------------------
+  "responsive-layout.desktop": {
+    "props": {
+      "props": {
+        "blockClass": "PDP"
+      }
+    },
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      // "flex-layout.row#specifications",
+      "tab-layout#product",
+      "flex-layout.row#banner-car",
+      "shelf.relatedProducts"
+      // "shelf#related"
+    ]
+  },
+
+  //Added related products--------
+  "shelf.relatedProducts": {
+    "blocks": ["product-summary.shelf#summary"],
+    "props": {
+      "blockClass": "related",
+      "recommendation": "similars",
+      "hideOutOfStockItems": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly",
+      "productList": {
+        "arrows": true,
+        "gap": "ph3",
+        "titleText": "Related Products",
+        "itemsPerPage": 4,
+        "scroll": "BY_PAGE"
+      }
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4,
+      "blockClass": "breadcrumb"
+    },
+    "children": ["breadcrumb"]
+  },
+  //--------------------------
+
+  "flex-layout.row#specifications-title": {
+    "children": ["rich-text#specifications"]
+  },
+  "rich-text#specifications": {
+    "props": {
+      "text": "##### Product Specifications"
+    }
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7
+    },
+    "children": ["product-description"]
+  },
+  "condition-layout.product#availability": {
+    "props": {
+      "blockClass": "pdp-ca",
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#product-main",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+
+  //----------------PDP-NISSAN-MAIN--------------------------------
+
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 0,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "product-main"
+    },
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+  },
+
+  "flex-layout.col#stack": {
+    "children": ["stack-layout"], /////////////////////////"image#Bannercar"
+    "props": {
+      "width": 600,
+      "height": 570,
+      "rowGap": 0,
+      "blockClass": "stack-pdp"
+    }
+  },
+  "stack-layout": {
+    "props": {
+      "blockClass": "pdp-stack"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "product-bookmark",
+      "product-specification-badges"
+    ]
+  },
+
+  "flex-layout.row#product-image": {
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "width": 600,
+      "height": 570,
+      "aspectRatio": "1:1",
+      // {
+      //   "desktop": "auto",
+      //   "phone": "16:9"
+      // },
+      "displayThumbnailsArrows": false,
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "thumbnailMaxHeight": 120,
+      "position": "left",
+      "blockClass": "pdp-img"
+    }
+  },
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+
+  "flex-layout.col#right-col": {
+    "props": {
+      "blockClass": "product-name",
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      //"flex-layout.row#product-brand",
+      "product-rating-inline",
+      "product-identifier.product#pdp",
+      "flex-layout.row#prodt-price",
+      // "flex-layout.row#list-price",
+      // "flex-layout.row#sp",
+      //"product-installments",
+      "flex-layout.row#pricing-desc",
+      "product-separator",
+      "product-description",
+      "flex-layout.row#dealers-PDP",
+      "product-comparison-block.selector"
+      // "sku-selector",
+      // "product-quantity",
+      // "product-assembly-options",
+      // "flex-layout.row#buy-wish-button",
+      // "product-comparison-block.selector",
+      // "availability-subscriber",
+      // // "availability-notify",
+      // "shipping-simulator",
+      // "flex-layout.row#social-networks-pdp",
+      // "product-gifts"
+      // "link-seller"
+      // "seller-table"
+    ]
+  },
+  "flex-layout.row#product-name": {
+    "props": {
+      "blockClass": "product-name"
+    },
+    "children": ["vtex.store-components:product-name#pdp"]
+  },
+  "vtex.store-components:product-name#pdp": {
+    "props": {
+      "blockClass": "pdp-product-name"
+    }
+  },
+
+  "product-identifier.product#pdp": {
+    "props": {
+      "blockClass": "pdp-ident"
+    }
+  },
+
+  "flex-layout.row#prodt-price": {
+    "props": {
+      "blockClass": "prodt-price"
+    },
+    "children": ["product-price"]
+  },
+  "product-price": {
+    "props": {
+      "showSavings": false,
+      "showListPrice": true,
+      "blockClass": "product-price"
+    }
+  },
+
+  "flex-layout.row#list-price": {
+    "props": {
+      "blockClass": "pdp-list-price"
+    },
+    "children": ["product-price-savings"]
+  },
+  "flex-layout.row#sp": {
+    "props": {
+      "blockClass": "pdp-sp"
+    },
+    "children": ["product-selling-price"]
+  },
+
+  "flex-layout.row#pricing-desc": {
+    "props": {
+      "blockClass": "pricing-desc",
+      "width": "60%"
+    },
+    "children": ["rich-text#pricing-desc"]
+  },
+  "rich-text#pricing-desc": {
+    "props": {
+      "blockClass": "name",
+      "text": "*All retail prices listed herein are suggested prices.All dealers are free to sell at whatever price, mark-up, or margin of profit they may choose. Prices do not include installations. Pictures are for informational purposes only. Prices subject to change."
+    }
+  },
+
+  "flex-layout.row#dealers-PDP": {
+    "props": {
+      "blockClass": "dealers-PDP"
+    },
+    "children": ["dealers-list-PDP#dealer"]
+  },
+
+  "flex-layout.row#PDP": {
+    "props": {
+      "blockClass": "PDP-cart",
+      "height": 80
+    },
+    "children": ["product-quantity", "add-to-cart-button"]
+  },
+  "dealers-list-PDP#dealer": {
+    "props": {
+      "VtexComp": "flex-layout.row#PDP",
+      "Shipping": "shipping-simulator",
+      "BannerCar": "address-banner-tony"
+    }
+  },
+
+  // added product-brand
+  // "flex-layout.row#product-brand": {
+  //   "props": {
+  //     "displayMode": "text",
+  //     "marginBottom": 3,
+  //     "blockClass": "product"
+  //   },
+
+  //   "children": ["vtex.store-components:product-brand"]
+  // },
+
+  "product-description": {
+    "props": {
+      "title": "DETAILS",
+      "collapseContent": true,
+      "blockClass": "product-desc",
+      "showTitle": true
+    }
+  },
+  "tab-layout#product": {
+    "props": {
+      "blockClass": "product-tab"
+    },
+    "children": ["tab-list#product", "tab-content#product"]
+  },
+  "tab-list#product": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "tab-list.item#details",
+      "tab-list.item#info",
+      "tab-list.item#reviews",
+      "tab-list.item#services"
+    ]
+  },
+  "tab-list.item#details": {
+    "props": {
+      "blockClass": "details",
+      "tabId": "Details",
+      "label": "DETAILS",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#info": {
+    "props": {
+      "blockClass": "info",
+      "label": "ADDITIONAL INFO",
+      "tabId": "Additional Info"
+    }
+  },
+  "tab-list.item#reviews": {
+    "props": {
+      "blockClass": "reviews",
+      "label": "REVIEwS",
+      "tabId": "Reviews"
+    }
+  },
+  "tab-list.item#services": {
+    "props": {
+      "blockClass": "services",
+      "label": "SERVICES",
+      "tabId": "Services"
+    }
+  },
+  "tab-content#product": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "tab-content.item#details",
+      "tab-content.item#info",
+      "tab-content.item#reviews",
+      "tab-content.item#services"
+    ]
+  },
+  "tab-content.item#details": {
+    "props": {
+      "blockClass": "details",
+      "tabId": "Details"
+    },
+    "children": ["product-description#tab"]
+  },
+  "product-description#tab": {
+    "props": {
+      "showTitle": false,
+      "collapseContent": false
+    }
+  },
+  "tab-content.item#info": {
+    "children": ["product-specifications"],
+    "props": {
+      "blockClass": "info",
+      "tabId": "Additional Info"
+    }
+  },
+  "tab-content.item#reviews": {
+    "children": ["product-reviews"],
+    "props": {
+      "blockClass": "reviews",
+      "tabId": "Reviews"
+    }
+  },
+  "tab-content.item#services": {
+    "children": ["product-description#tab"],
+    "props": {
+      "blockClass": "services",
+      "tabId": "Services"
+    }
+  },
+
+  "flex-layout.row#banner-car": {
+    "props": {
+      "blockClass": "car",
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#car"]
+  },
+
+  "image#car": {
+    "props": {
+      "horizontalAlign": "center",
+      "src": "assets/pdpCar.png",
+      // "width": 1160,
+      // "height": 460,
+      "link": "/",
+      "blockClass": "car"
+    }
+  },
+
+  "image#Bannercar": {
+    "props": {
+      "horizontalAlign": "center",
+      "src": " https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/D65287B2-E276-4715-97D4-49C7ABAD845A.png",
+      // "width": 1160,
+      // "height": 460,
+      "link": "/",
+      "blockClass": "car"
+    }
+  },
+
+  //----------------------------
+
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true,
+      "hideImpossibleCombinations": false
+    }
+  },
+  "flex-layout.row#buy-wish-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 8,
+      "blockClass": "buttonpdp"
+    },
+    "children": ["flex-layout.col#buy-button", "flex-layout.col#wish-button"]
+  },
+  "flex-layout.col#buy-button": {
+    "props": {
+      "blockClass": "button-mobile"
+    },
+    "children": ["add-to-cart-button"]
+  },
+  "flex-layout.col#wish-button": {
+    "children": ["add-to-list-btn"]
+  },
+  "flex-layout.row#product-availability": {
+    "props": {
+      "colGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7
+    },
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col-availability"
+    ]
+  },
+  "flex-layout.col#right-col-availability": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "info-availability"
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-identifier.product",
+      "sku-selector",
+      "flex-layout.row#availability"
+    ]
+  },
+  "flex-layout.row#availability": {
+    "props": {
+      "blockClass": "message-availability"
+    },
+    "children": ["availability-subscriber"]
+  },
+  "flex-layout.row#social-networks-pdp": {
+    "children": ["social-networks"],
+    "props": {
+      "blockClass": "social-networks-pdp"
+    }
+  }
+  //,
+
+  // "product-specifications": {
+  //   "props": {
+  //     "showTitle": false,
+  //     "collapseContent": false
+  //   }
+  // }
+  // "shelf#related": {
+  //   "blocks": ["product-summary.shelf"],
+  //   "props": {
+  //     "recomendation": "editor.relatedProducts.view",
+  //     "orderBy": "OrderByTopSaleDESC",
+  //     "productList": {
+  //       "maxItems": 10,
+  //       "itemsPerPage": 4,
+  //       "minItemsPerPage": 1.5,
+  //       "scroll": "BY_PAGE",
+  //       "marginBotton": 3,
+  //       "arrows": true,
+  //       "titleText": "Featured Parts And Accessories"
+  //     }
+  //   }
+  // }
+}

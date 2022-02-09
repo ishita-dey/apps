@@ -1,0 +1,78 @@
+.nameContainer--summaryListDesktop {
+  padding-top: 0.25rem;
+  padding-bottom: 0.75rem;
+  justify-content: start;
+}
+
+.nameContainer--summaryListMobile {
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+  justify-content: start;
+}
+.nameContainer {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.brandName--summaryListMobile {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: black;
+}
+
+.container--listLayout {
+  max-width: none !important;
+}
+
+.image--summaryListDesktop {
+  width: 180px !important;
+}
+
+.image--summaryListMobile {
+  width: 140px !important;
+  min-width: 140px;
+  height: inherit !important;
+}
+
+.nameContainer--productNameGrid :global(.vtex-product-summary-2-x-brandName) {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2e2e2e;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  height: 22px;
+}
+.nameWrapper--summaryListDesktop {
+  max-width: 500px;
+}
+
+.skuSelectorContainer {
+  margin: 0 0 0.3rem;
+}
+.skuSelectorItem {
+  height: 20px;
+  width: auto;
+  min-width: 20px;
+  margin: 0.3rem;
+}
+.skuSelectorInternalBox {
+  border: none;
+}
+.skuSelectorItemTextValue {
+  padding: 2px 5px;
+  font-size: 15px;
+}
+.containerNormal {
+  padding: 0.75rem;
+}
+.element {
+  padding: 0;
+}
+
+.container--searchSummaryCard {
+  border: 1px solid rgb(204, 203, 203);
+  height: 440px !important ;
+  border-radius: 0;
+  width: 300px !important;
+}

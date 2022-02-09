@@ -1,0 +1,620 @@
+{
+  "vtex.menu@2.x:menu#footer-products": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-products"
+    },
+    "children": [
+      "menu-item#Products",
+      "menu-item#Parts",
+      "menu-item#Accessories",
+      "menu-item#Merchandise",
+      "menu-item#NISMO",
+      "menu-item#QuickOrder",
+      "menu-item#orderQuote"
+      
+    ]
+  },
+  "menu-item#Products": {
+    "props": {
+      "id": "menu-item-Products",
+      "blockClass": "Products",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Products",
+        "text": "Products"
+      }
+    }
+  },
+  "menu-item#Parts": {
+    "props": {
+      "id": "menu-item-Parts",
+      "blockClass": "Parts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clp/135",
+        "noFollow": false,
+        "tagTitle": "Parts",
+        "text": "Parts"
+      }
+    }
+  },
+  "menu-item#Accessories": {
+    "props": {
+      "id": "menu-item-Accessories",
+      "blockClass": "Accessories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clp/167",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+  "menu-item#Merchandise": {
+    "props": {
+      "id": "menu-item-Merchandise",
+      "blockClass": "Merchandise",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clp/175",
+        "noFollow": false,
+        "tagTitle": "Merchandise",
+        "text": "Merchandise"
+      }
+    }
+  },
+  "menu-item#NISMO": {
+    "props": {
+      "id": "menu-item-NISMO",
+      "blockClass": "NISMO",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clp/128",
+        "noFollow": false,
+        "tagTitle": "NISMO",
+        "text": "NISMO"
+      }
+    }
+  },
+
+  "menu-item#QuickOrder": {
+    "props": {
+      "id": "menu-item-QuickOrder",
+      "blockClass": "QuickOrder",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quickorder",
+        "noFollow": false,
+        "tagTitle": "QuickOrder",
+        "text": "QuickOrder"
+      }
+    }
+  },
+
+  "menu-item#orderQuote": {
+    "props": {
+      "id": "menu-item-orderQuote",
+      "blockClass": "orderQuote",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/orderquote",
+        "noFollow": false,
+        "tagTitle": "orderQuote",
+        "text": "OrderQuote"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-for-owners": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-for-owners"
+    },
+    "children": [
+      "menu-item#for-owners",
+      "menu-item#manual-guides",
+      "menu-item#recall-information",
+      "menu-item#owner-portal",
+      "menu-item#nissan-services",
+      "menu-item#nissan-visa-credit-card",
+      "menu-item#nissan-tire-store"
+    ]
+  },
+  "menu-item#for-owners": {
+    "props": {
+      "id": "menu-item-for-owners",
+      "blockClass": "for-owners",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "For Owners",
+        "text": "For Owners"
+      }
+    }
+  },
+  "menu-item#manual-guides": {
+    "props": {
+      "id": "menu-item-manual-guides",
+      "blockClass": "manual-guides",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/manual-guide",
+        "noFollow": true,
+        "tagTitle": "Manual & Guides",
+        "text": "Manual & Guides"
+      }
+    }
+  },
+  "menu-item#recall-information": {
+    "props": {
+      "id": "menu-item-recall-information",
+      "blockClass": "recall-information",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/recall-info",
+        "noFollow": true,
+        "tagTitle": "Recall information",
+        "text": "Recall information"
+      }
+    }
+  },
+  "menu-item#owner-portal": {
+    "props": {
+      "id": "menu-item-owner-portal",
+      "blockClass": "owner-portal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/owner-portal",
+        "noFollow": true,
+        "tagTitle": "Owner Portal",
+        "text": "Owner Portal"
+      }
+    }
+  },
+  "menu-item#nissan-services": {
+    "props": {
+      "id": "menu-item-nissan-services",
+      "blockClass": "nissan-services",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nissan-service",
+        "noFollow": true,
+        "tagTitle": "Nissan Services",
+        "text": "Nissan Services"
+      }
+    }
+  },
+  "menu-item#nissan-visa-credit-card": {
+    "props": {
+      "id": "menu-item-nissan-visa-credit-card",
+      "blockClass": "nissan-visa-credit-card",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nissan-visa",
+        "noFollow": true,
+        "tagTitle": "Nissan Visa Credit Card",
+        "text": "Nissan Visa Credit Card"
+      }
+    }
+  },
+
+  "menu-item#nissan-tire-store": {
+    "props": {
+      "id": "menu-item-nissan-tire-store",
+      "blockClass": "nissan-tire-store",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nissan-tire-store",
+        "noFollow": true,
+        "tagTitle": "Nissan Tire Store",
+        "text": "Nissan Tire Store"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-legal": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-legal"
+    },
+    "children": [
+      "menu-item#legal",
+      "menu-item#privacy-policy",
+      "menu-item#sell-personal-information",
+      "menu-item#warranty"
+    ]
+  },
+  "menu-item#legal": {
+    "props": {
+      "id": "menu-item-legal",
+      "blockClass": "legal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Legal",
+        "text": "Legal"
+      }
+    }
+  },
+  "menu-item#privacy-policy": {
+    "props": {
+      "id": "menu-item-privacy-policy",
+      "blockClass": "privacy-policy",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/privacyPolicy",
+        "noFollow": true,
+        "tagTitle": "Privacy Policy",
+        "text": "Privacy Policy"
+      }
+    }
+  },
+  "menu-item#sell-personal-information": {
+    "props": {
+      "id": "menu-item-sell-personal-information",
+      "blockClass": "sell-personal-information",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nissan-data-privacy",
+        "noFollow": true,
+        "tagTitle": "Do Not Sell My Personal Information",
+        "text": "Do Not Sell My Personal Information"
+      }
+    }
+  },
+  "menu-item#warranty": {
+    "props": {
+      "id": "menu-item-warranty",
+      "blockClass": "warranty",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/warranty",
+        "noFollow": true,
+        "tagTitle": "Warranty",
+        "text": "Warranty"
+      }
+    }
+  },
+  
+  "menu-item#omniparts": {
+    "props": {
+      "id": "menu-item-omniparts",
+      "blockClass": "omniparts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/omniparts",
+        "noFollow": true,
+        "tagTitle": "OMNIPARTS",
+        "text": "OMNIPARTS"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-buying": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-buying"
+    },
+    "children": [
+      "menu-item#buying",
+      "menu-item#build-your-nissan",
+      "menu-item#view-NISMO-catalog",
+      "menu-item#NISMO-japan-parts",
+      "menu-item#jdm-nismo",
+      "menu-item#nissan-vip",
+      "menu-item#omniparts"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#Products-mobile",
+      "menu-item#Buying-mobile",
+      "menu-item#For-Owners-mobile",
+      "menu-item#Legal-mobile"
+    ]
+  },
+  "menu-item#Products-mobile": {
+    "props": {
+      "id": "menu-item-category-Products",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "Products-mobile",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Products",
+        "text": "Products"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#Products"]
+  },
+  "vtex.menu@2.x:submenu.accordion#Products": {
+    "children": ["vtex.menu@2.x:menu#Products-accordion"]
+  },
+  "vtex.menu@2.x:menu#Products-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#Parts",
+      "menu-item#Accessories",
+      "menu-item#Merchandise",
+      "menu-item#NISMO",
+      "menu-item#QuickOrder",
+      "menu-item#orderQuote"
+    ]
+  },
+
+  "menu-item#Buying-mobile": {
+    "props": {
+      "id": "menu-item-category-buying",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "buying-mobile",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Buying",
+        "text": "Buying"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#Buying"]
+  },
+  "vtex.menu@2.x:submenu.accordion#Buying": {
+    "children": ["vtex.menu@2.x:menu#buying-accordion"]
+  },
+  "vtex.menu@2.x:menu#buying-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#build-your-nissan",
+      "menu-item#view-NISMO-catalog",
+      "menu-item#NISMO-japan-parts",
+      "menu-item#jdm-nismo",
+      "menu-item#nissan-vip",
+      "menu-item#omniparts"
+    ]
+  },
+  "menu-item#Legal-mobile": {
+    "props": {
+      "blockClass": "legal-mobile",
+      "itemProps": {
+        "tagTitle": "Legal",
+        "text": "Legal"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#legal"]
+  },
+  "vtex.menu@2.x:submenu.accordion#legal": {
+    "children": ["vtex.menu@2.x:menu#legal-mobile"]
+  },
+  "vtex.menu@2.x:menu#legal-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#privacy-policy",
+      "menu-item#sell-personal-information",
+      "menu-item#warranty"
+    ]
+  },
+  "menu-item#For-Owners-mobile": {
+    "props": {
+      "blockClass": "for-owners-mobile",
+      "itemProps": {
+        "tagTitle": "For Owners",
+        "text": "For Owners"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#for-owners-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#for-owners-mobile": {
+    "children": ["vtex.menu@2.x:menu#footer-for-owners-mobile"]
+  },
+  "vtex.menu@2.x:menu#footer-for-owners-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#manual-guides",
+      "menu-item#recall-information",
+      "menu-item#owner-portal",
+      "menu-item#nissan-services",
+      "menu-item#nissan-visa-credit-card",
+      "menu-item#nissan-tire-store"
+    ]
+  },
+  "menu-item#buying": {
+    "props": {
+      "id": "menu-item-category-buying",
+      "blockClass": "buying",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Buying",
+        "text": "Buying"
+      }
+    }
+  },
+  "menu-item#build-your-nissan": {
+    "props": {
+      "id": "menu-item-build-your-nissan",
+      "blockClass": "build-your-nissan",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/build-your-nissan",
+        "noFollow": false,
+        "tagTitle": "Build Your Nissan",
+        "text": "Build Your Nissan"
+      }
+    }
+  },
+  "menu-item#view-NISMO-catalog": {
+    "props": {
+      "id": "menu-item-view-NISMO-catalog",
+      "blockClass": "view-NISMO-catalog",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nismo-catalog",
+        "noFollow": false,
+        "tagTitle": "View NISMO Catalog",
+        "text": "View NISMO Catalog"
+      }
+    }
+  },
+  "menu-item#NISMO-japan-parts": {
+    "props": {
+      "id": "menu-item-NISMO-japan-parts",
+      "blockClass": "NISMO-japan-parts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nismo-japan-parts",
+        "noFollow": false,
+        "tagTitle": "NISMO Japan Parts and Accessories",
+        "text": "NISMO Japan Parts and Accessories"
+      }
+    }
+  },
+  "menu-item#jdm-nismo": {
+    "props": {
+      "id": "menu-item-jdm-nismo",
+      "blockClass": "jdm-nismo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nismo-merchandise",
+        "noFollow": false,
+        "tagTitle": "JDM NISMO Merchandise",
+        "text": "JDM NISMO Merchandise"
+      }
+    }
+  },
+  "menu-item#nissan-vip": {
+    "props": {
+      "id": "menu-item-nissan-vip",
+      "blockClass": "nissan-vip",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/vip-program",
+        "noFollow": false,
+        "tagTitle": "Nissan VIP Program",
+        "text": "Nissan VIP Program"
+      }
+    }
+  },
+  "menu-item#returns": {
+    "props": {
+      "id": "menu-item-returns",
+      "type": "custom",
+      "blockClass": "returns",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/buying/returns",
+        "noFollow": false,
+        "tagTitle": "Returns",
+        "text": "Returns"
+      }
+    }
+  },
+  "menu-item#gift-credit": {
+    "props": {
+      "id": "menu-item-gift-credit",
+      "blockClass": "gift-credit",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/buying/gift-credit",
+        "noFollow": false,
+        "tagTitle": "Gift Credit",
+        "text": "Gift Credit"
+      }
+    }
+  }
+}

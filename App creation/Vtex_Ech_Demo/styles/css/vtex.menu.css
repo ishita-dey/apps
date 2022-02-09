@@ -1,0 +1,178 @@
+.styledLinkContent--sub-header {
+  font-family: Helvetica, Tahoma, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  padding: 10px 25px;
+  padding-left: 30px;
+  color: rgb(97, 96, 96);
+}
+
+.styledLinkContent--sub-header:hover,
+.styledLinkContent--sub-header:active {
+  color: white;
+}
+
+.styledLinkContainer--sub-header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.styledLinkContainer--sub-header:hover,
+.menuItem--sub-header--isOpen:hover,
+.menuItem--sub-header--isOpen:active,
+.styledLinkContent--sub-header:hover {
+  color: white;
+  background-color: rgb(14, 78, 14);
+}
+
+/* ------------------------------------------------------------ */
+
+.menuContainerNav--footer-products,
+.menuContainerNav--footer-buying,
+.menuContainerNav--footer-for-owners,
+.menuContainerNav--footer-legal
+{
+  max-width: 300px;
+  justify-content: left;
+  margin: 0px 0px 0px 0px;
+}
+
+.styledLinkContent--Products,
+.styledLinkContent--buying,
+.styledLinkContent--for-owners,
+.styledLinkContent--legal
+{
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.styledLinkContent--megaMenu-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: rgb(10, 128, 10);
+}
+
+.styledLinkContent--megaMenu-header:hover,
+.styledLinkContent--megaMenu-header:active {
+  color: rgb(14, 151, 14);
+}
+
+.styledLinkContent--Parts,
+.styledLinkContent--Accessories,
+.styledLinkContent--Merchandise,
+.styledLinkContent--NISMO,
+.styledLinkContent--build-your-nissan,
+.styledLinkContent--view-NISMO-catalog,
+.styledLinkContent--NISMO-japan-parts,
+.styledLinkContent--jdm-nismo,
+.styledLinkContent--nissan-vip,
+.styledLinkContent--manual-guides,
+.styledLinkContent--recall-information,
+.styledLinkContent--owner-portal,
+.styledLinkContent--nissan-services,
+.styledLinkContent--nissan-visa-credit-card,
+.styledLinkContent--nissan-tire-store,
+.styledLinkContent--omniparts,
+.styledLinkContent--privacy-policy,
+.styledLinkContent--sell-personal-information,
+.styledLinkContent--warranty,
+.styledLinkContent--QuickOrder,
+.styledLinkContent--orderQuote {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #c0bfc0;
+  word-wrap: break-word!important;
+  max-width: 100px!important;
+  text-align: left;
+}
+ 
+  /* =========== Tablet ================*/
+@media only screen and (min-width: 481px) and (max-width: 1026px) {
+  .styledLinkContent--Products-mobile,
+  .styledLinkContent--buying-mobile,
+  .styledLinkContent--for-owners-mobile,
+  .styledLinkContent--legal-mobile {
+    color: white !important;
+  }
+  .styledLinkContent--megaMenu-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 550;
+    padding: 0.3rem;
+    padding-left: 1rem;
+  }
+  .styledLinkContent--sub-header {
+    font-size: 1rem;
+  }
+}
+/*============ Mobile ============== */
+@media only screen and (max-width: 480px) {
+  .styledLinkContent--Products-mobile,
+  .styledLinkContent--buying-mobile,
+  .styledLinkContent--for-owners-mobile,
+  .styledLinkContent--legal-mobile {
+    color: white !important;
+  }
+
+  .styledLinkContent--megaMenu-header {
+    font-family: Helvetica;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+  }
+  .styledLinkContent--sub-header {
+    font-size: 0.95rem;
+    font-weight: 550;
+    padding-bottom: 0.3px;
+  }
+}
+
+.accordionIcon--shop-mobile,
+.accordionIcon--about-mobile,
+.accordionIcon--customer-service-mobile,
+.accordionIcon--my-account-mobile {
+  color: white !important;
+}
+
+.accordionIcon--megaMenu-header {
+  color: green !important;
+  padding-left: 1rem;
+}
+
+
+/* =======Nissan============ */
+.styledLinkContent--nissan-megaMenu-header {
+  height: 22px;
+  font-family: NissanBrand;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.styledLinkContent--QuickOrder,
+.styledLinkContent--orderQuote
+{
+  font-size: 14px;
+    margin-top: 5px;
+    color: #c0bfc0;
+    word-wrap: break-word!important;
+    max-width: 100px!important;
+    text-align: left;
+}
+.submenuWrapper--sub-menu-wrapper {
+  overflow: scroll;
+  max-height: 450px;
+}

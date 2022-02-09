@@ -1,0 +1,16 @@
+.summaryItemContainer {
+    justify-content: space-around;
+}
+.summarySmallDisclaimer {
+    display: none;
+}
+.summaryItemLabel,
+.summaryItemPrice {
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.summaryItemPrice {
+    flex: initial;
+    margin-left: 10px;
+    color: red;
+}

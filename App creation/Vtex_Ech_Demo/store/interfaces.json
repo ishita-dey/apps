@@ -1,0 +1,87 @@
+{
+  "search-icon-button": {
+    "component": "SearchButton"
+  },
+  "remove-icon-button": {
+    "component": "RemoveButton"
+  },
+  "viewdetails-button": {
+    "component": "ViewdetailButtonWrapper"
+  },
+  "dropdown-button": {
+    "component": "DropdownButtonWrapper"
+  },
+  "myaccount-menu": {
+    "component": "Myaccount"
+  },
+  "women-menu": {
+    "component": "Womenmenu"
+  },
+  "electronics-menu": {
+    "component": "ElectronicsMenu"
+  },
+  "smallApp-menu": {
+    "component": "SmallAppMenu"
+  },
+  "majorApp-menu": {
+    "component": "MajorAppMenu"
+  },
+  "my-account-page.test-page": {
+    "component": "MyAppPage"
+  },
+  "my-account-link.test-link": {
+    "component": "MyAppLink"
+  },
+  "profile-display.test-display": {
+    "component": "BeautyDataWrapper"
+  },
+  "profile-input.test-input": {
+    "component": "FavColorWrapper"
+  },
+  "electronics": {
+    "component": "Electronics"
+  },
+  "small-appliances": {
+    "component": "Small Appliances"
+  },
+  "major-appliances": {
+    "component": "Major Appliances"
+  },
+  "ContactUsData": {
+    "component": "ContactUsDataWrapper"
+  },
+  "ContactFormData": {
+    "component": "ContactFormDataWrapper"
+  },
+  "ContactUsHistory": {
+    "component": "ContactUsHistory"
+  },
+  "car-model-tabs": {
+    "component": "ModelTabWrapper"
+  },
+  "car-model-accordion": {
+    "component": "CarModelAccordion"
+  },
+  "dealers-list": {
+    "component": "DealerListWrapper"
+  },
+  "dealers-list-PDP": {
+    "component": "DealerListPDPWrapper"
+  },
+  "address-banner-tony": {
+    "component": "AdressBannerWrapper"
+  },
+  "nissan-department": {
+    "component": "Department"
+  },
+  "store.search.product-comparison": {
+    "around": ["comparison-context-wrapper"]
+  },
+  "search-result-layout.desktop.product-comparison": {
+    "allowed": ["product-comparison-drawer"]
+  },
+  "store.product.product-comparison": {
+    "around": ["comparison-context-wrapper"],
+    "allowed": ["product-comparison-drawer"]
+  }
+}

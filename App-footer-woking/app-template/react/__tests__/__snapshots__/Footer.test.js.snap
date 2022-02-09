@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Footer check prop-types 1`] = `
+<div
+  className="footerContainer"
+>
+  <div
+    className="icons"
+  >
+    <div />
+    <div
+      className="disclamer"
+    />
+  </div>
+  <div
+    className="copyrightContainer"
+  >
+    <p
+      className="copyright"
+    />
+  </div>
+</div>
+`;
+
+exports[`Component: Footer component rendered properly 1`] = `
+<div
+  class="footerContainer"
+>
+  <div
+    class="icons"
+  >
+    <div />
+    <div
+      class="disclamer"
+    />
+  </div>
+  <div
+    class="copyrightContainer"
+  >
+    <p
+      class="copyright"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,7 @@
+{
+  "app-footer": {
+    "component": "Footer",
+    "allowed": "*",
+    "composition": "children"
+  }
+}

@@ -1,0 +1,18 @@
+.stackItem--product {
+  width: 100%;
+}
+
+.stackItem--quickview {
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.stackItem--category {
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  justify-content: right;
+  align-items: end;
+  padding: 5px;
+}

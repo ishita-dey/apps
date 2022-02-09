@@ -1,0 +1,25 @@
+.container--layout-option {
+  margin-left: 0.3em;
+}
+
+.paragraph--layout-option {
+  margin: 0;
+}
+
+.paragraph--summarySpecificationBullet {
+  margin: 0;
+  line-height: initial;
+  font-size: 1.25rem;
+  line-height: 1.15rem;
+}
+.heading-level-1,
+.container--VIN-info,
+.container--details-1-text,
+.container--details-2-text,
+.container--details-3-text,
+.container--MyNISSAN-App-title,
+.wrapper--App-content,
+.wrapper--data-content-title,
+.wrapper--data-content-1{
+  margin-left: 20px;
+}

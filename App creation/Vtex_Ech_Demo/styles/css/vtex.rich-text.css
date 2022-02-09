@@ -1,0 +1,437 @@
+.container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--shelfTitle {
+  color: #727273;
+  justify-content: center;
+  text-align: center;
+}
+
+.headingLevel2--shelfTitle {
+  font-weight: 200;
+}
+
+.container--deals .paragraph {
+  margin: 0;
+}
+
+.container--link {
+  justify-content: center;
+}
+
+.container--question {
+  justify-content: center;
+}
+
+.container--question .paragraph {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 16px;
+  padding-top: 120px;
+  color: #03034e;
+}
+
+.container--question .strong {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.container--link .paragraph {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034e;
+}
+
+.paragraph--nissanModel {
+  color: #4e4e50 !important;
+}
+
+.container--link .strong {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container--link .link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034e;
+}
+
+.container--title {
+  color: #03034e;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 640px) {
+  .container--question .strong {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+  .container--about {
+    max-width: 85%;
+  }
+  .container--title {
+    color: #03034e;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 60%;
+  }
+  .container--title .paragraph {
+    line-height: 1.3em;
+    font-weight: bold;
+  }
+  .paragraph--credits,
+  .paragraph--social {
+    font-size: 16px;
+    color: #c0bfc0;
+    padding-top: 0px;
+  }
+
+  .paragraph .paragraph--layout-option {
+    margin-top: -5px;
+  }
+}
+
+.wrapper--credits {
+  max-height: 16px;
+}
+
+.container--credits {
+  color: white;
+  align-content: center;
+  justify-content: center;
+  font-size: 16px;
+  max-height: 16px;
+  margin-top: 0px;
+}
+.container--shopping,
+.container--viewcart {
+  display: flex;
+  justify-content: center;
+}
+.paragraph--shopping {
+  color: black !important;
+  font-weight: bolder;
+  /* font-family: sans-serif; */
+}
+.paragraph--shopping {
+  padding: 0px 80px;
+}
+
+/* =========== Tablet ================*/
+@media only screen and (min-width: 481px) and (max-width: 1026px) {
+  .container--credits {
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*============ Mobile ============== */
+@media only screen and (max-width: 480px) {
+  .container--credits {
+    text-align: center;
+    font-size: smaller;
+    background-color: #323437;
+    min-height: 50px;
+    margin-bottom: 10px;
+  }
+  .paragraph--shopping {
+    padding: 0px 0px;
+    margin: 0px 0px;
+  }
+}
+
+.paragraph--faq-Heading {
+  color: grey;
+  /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
+  font-size: larger;
+}
+
+.heading--faq-Extra {
+  color: green;
+  /* font-family: cursSan Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serifive; */
+}
+
+.container--shipping-query1 {
+  color: green;
+  /* font-family: cursive; */
+  font-size: large;
+}
+.wrapper--shipping-ans1 {
+  color: grey;
+  /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
+  font-size: large;
+}
+
+:global(.vtex-modal-layout-0-x-paper--modal-md) {
+  width: 36%;
+  padding: 23px;
+  border: 1px solid black;
+  line-break: auto;
+}
+
+.paragraph--anchor-link {
+  text-decoration: underline;
+  color: #d61c79;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: cursive;
+}
+.container--shipping-title {
+  color: green;
+  font-size: x-large;
+  /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
+}
+
+.strong--privacy-title {
+  color: green;
+  font-size: large;
+  /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
+}
+.strong--privacy-title .container--term-handle {
+  color: green;
+  font-size: large;
+}
+
+.container--term-handle {
+  color: green;
+  font-size: large;
+}
+
+.container--term-points {
+  color: grey;
+  font-size: large;
+}
+
+.wrapper--term-askUs {
+  color: green;
+  font-size: x-large;
+}
+:global(.vtex-modal-layout-0-x-triggerContainer) {
+  display: flow-root;
+}
+
+.container--privacy-title {
+  color: green;
+  font-size: large;
+}
+
+.wrapper--title-contact {
+  color: green;
+  font-size: large;
+}
+.wrapper--about-contact {
+  color: grey;
+  font-size: medium;
+  /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
+}
+
+.container--Wishtitle {
+  color: #3f3f40;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+/* ---------- */
+.heading--awesome {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.heading--order-placed-text {
+  margin-top: 10px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.container--contact-us {
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-variant-caps: petite-caps;
+  color: #3f3f40;
+}
+
+.container--contact-us-submit {
+  font-size: 1.3rem;
+  color: #424244;
+  margin: 3rem auto;
+}
+.paragraph--header-top-sales {
+  color: white;
+}
+
+.container--contact-us-spacer {
+  font-size: 2px;
+  color: transparent;
+  margin-top: 1rem;
+}
+.headingLevel5--vinText {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+/*----------------PDP Page---------------------- */
+.paragraph--name {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: #171c20;
+  padding-top: 0;
+}
+
+.heading--data-content-title {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.paragraph--warranty-title,
+.paragraph--promotion-title,
+.paragraph--disclaimer-title,
+.paragraph--yakima-title {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: inherit;
+  padding-left: 50px;
+  color: black;
+  margin-bottom: 5px;
+}
+.paragraph--warranty-text,
+.paragraph--promotion-content,
+.paragraph--disclaimer-text,
+.paragraph--yakima-text,
+.paragraph--privacy-content {
+  padding-left: 50px;
+}
+.heading--privacy-policy-title {
+  padding-left: 50px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 5px;
+}
+.paragraph--right-col-manual {
+  margin-top: 20px;
+  padding-top: 48px;
+}
+.heading--nissan-tire-store {
+  /* background: url(https://www.nissantireadvantage.com/content/articles/D5C712DA-CFC6-4DEE-AA93-736DAF8679F3/images/NIS_2021_169_%2470InstantRebate_OTSHeroA_EXLARGE_2800x800_VAR1.jpg) no-repeat; */
+  height: 400px;
+  background-size: auto 400px;
+  background-color: white;
+  background-position: center bottom;
+  width: 192%;
+}
+
+.paragraph--vip-title,
+.paragraph--vip-vehicle-info,
+.paragraph--create-password {
+  color: black !important;
+  font-weight: bold;
+}
+.paragraph--vip-heading {
+  font-size: 20px;
+  color: black !important;
+  font-weight: bold;
+  font-family: "Nissan Brand Bold_master", sans-serif;
+}
+.paragraph--vip-content-title {
+  color: black !important;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Nissan Brand Bold_master", sans-serif;
+}
+.wrapper--part-service-1-title,
+.container--part-service-2-title,
+.wrapper--part-service-3-title,
+.container--nissan-para-1 {
+  font-weight: 600;
+}
+
+.paragraph--nissan-tire-store {
+  padding: 25px;
+  font-size: 20px;
+  color: #fff;
+}
+.link--shopping {
+  text-decoration: none;
+}
+.paragraph--frontier-text {
+  margin-left: 30px;
+  font-size: large;
+  color: black;
+}
+.paragraph--omniparts-head {
+  margin-top: 200px;
+  font-weight: bolder;
+  font-size: 30px;
+  color: black;
+}
+.paragraph--omniparts-text {
+  color: black;
+}
+
+/*----------------------------------------- Sales Page ------------------------------*/
+
+/* discount */
+.paragraph--discount {
+  margin: 0 auto;
+  font-size: 14px;
+  font-variant: small-caps;
+  font-family: "NissanBrand", sans-serif;
+  border: 1px solid #c23232;
+  border-radius: 22px;
+  background-color: #c23232;
+  padding: 4px 7px;
+  color: white;
+}
+.container--discount {
+  margin-top: 0;
+  margin-bottom: 8px;
+  justify-content: flex-end;
+}
+
+.container--discount-title {
+  justify-content: center;
+  margin-top: 0;
+  font-variant: normal;
+}
+
+.heading--discount-title {
+  text-align: center;
+}
+.paragraph--discount-title {
+  text-align: center;
+}
+
+.paragraph--header-top-discount {
+  color: white;
+  font-variant: small-caps;
+  font-family: "NissanBrand", sans-serif;
+}
+.paragraph--omniparts-text {
+  color: black;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .paragraph--credits {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}

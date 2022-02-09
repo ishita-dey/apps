@@ -1,0 +1,450 @@
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  padding: 0 0.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}
+
+/* .flexRowContent--menu-link {
+  background-color: white;
+  color: darkolivegreen;
+} */
+
+.flexRowContent--main-header {
+  background-color: white;
+}
+
+.flexRowContent--nissan-main-header-mobile {
+  align-items: center;
+  padding: 0;
+  background-color: #000000;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+  font-weight: 700;
+  font-size: 14px;
+  color: lightgray;
+}
+
+.flexRowContent--main-header :hover,
+.flexRowContent--main-header :active {
+  color: rgb(11, 112, 50);
+}
+
+.flexRow--deals {
+  background-color: #a7afbd;
+  padding: 14px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--deals .flexCol {
+  align-items: center;
+}
+
+.flexCol--filterCol {
+  min-width: 280px;
+  max-width: 300px;
+}
+
+.flexCol--productCountCol {
+  align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+  align-items: flex-end;
+}
+
+.flexCol--orderByMobileCol {
+  width: 42%;
+}
+
+.flexCol--filterMobileCol {
+  width: 38%;
+}
+
+.flexRow--quickviewMainRow {
+  display: flex;
+  max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:first-child {
+  overflow-y: auto;
+  height: 66% !important;
+  overflow-x: hidden;
+}
+
+.flexColChild--quickviewDetails:last-child {
+  height: 34% !important;
+}
+
+.flexRow--addToCartRow {
+  padding-bottom: 1rem;
+}
+
+.flexColChild .flexColChild--productCountCol {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+/*.flexCol*  {
+  display:none;
+}*/
+
+.flexRow--footer-link {
+  /* width: 1440px; */
+  height: 350px;
+  padding: 10px 0 0;
+  background-color: #000;
+}
+.flexRow--credits {
+  /* width: 1440px; */
+  height: 52px;
+  background-color: #323437;
+  justify-content: center;
+  align-content: center;
+}
+
+.flexRowContent--menu-row :global(.vtex-menu-2-x-styledLink) {
+  color: white;
+}
+
+.flexRow--minicart-footer {
+  box-shadow: none;
+}
+
+.flexRow--sub-content-desktop {
+  /* display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px; */
+  border-bottom: 1px solid gray;
+  padding-bottom: 8px;
+  border-bottom: inset;
+  margin-right: 10px;
+  position: relative;
+  bottom: 20px;
+}
+.flexRow--cart-image-desktop {
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.flexRowContent--cart-image-desktop {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.flexRow--shopping,
+.flexRow--viewcart {
+  background-color: #f2f5f4;
+  margin-top: 5px;
+  border: 1px solid #d8d8d8;
+}
+.flexRowContent--viewcart :hover {
+  background-color: #c32323;
+  color: white !important;
+  cursor: pointer;
+}
+.flexRowContent--shopping :hover {
+  background-color: #c32323;
+  color: white !important;
+  cursor: pointer;
+}
+.flexColChild--priceWrapper {
+  color: #c32323;
+}
+
+/* specific styling main header */
+
+.flexRowContent--main-menu {
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgb(167, 165, 165);
+}
+
+.flexRowContent--main-menu :hover,
+:active {
+  color: rgb(235, 235, 235);
+}
+
+.flexRowContent--main-menu :global(.vtex-menu-2-x-styledLink) {
+  font-size: 20px;
+  color: rgb(11, 112, 50);
+  font-weight: 600;
+}
+
+.flexRow--social-networks-pdp {
+  background-color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+/* .flexRow--customSearchTitle {
+  position: relative;
+} */
+.flexRowContent--customSearchTitle {
+  /* position: absolute;
+  top: -47px;
+  left: 0; */
+  background-color: #fff;
+  width: auto;
+  min-width: 280px;
+  border-bottom: 1px solid #d1d5c7;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 1rem;
+}
+
+/*.flexColChild:global(.vtex-flex-layout-0-x-flexRow){
+  text-align: center;
+  display: flex;
+}*/
+.flexCol--social-network-col {
+  margin: 30px 30px 30px 30px;
+}
+
+.flexColChild--social-network-col {
+  max-height: 50px;
+}
+
+/* =========== Tablet ================*/
+@media only screen and (min-width: 481px) and (max-width: 1026px) {
+  .flexRowContent--payment-methods {
+    background-color: rgb(0, 0, 0);
+  }
+  .flexRowContent--accordion {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+/*============ Mobile ============== */
+@media only screen and (max-width: 480px) {
+  .flexRowContent--payment-methods {
+    background-color: rgb(0, 0, 0);
+    max-height: 150px;
+  }
+  .flexRowContent--accordion {
+    background-color: rgb(0, 0, 0);
+  }
+  .flexColChild--product-name {
+    padding-left: 25px;
+  }
+  .flexRow--credits {
+    background-color: #323437;
+  }
+  .flexRow--shopping {
+    max-height: 50px;
+    margin: 10px 10px;
+    font-size: 12px;
+  }
+  .flexRowContent--breadcrumb {
+    padding: 0px 0px;
+    margin: 0px 0px;
+  }
+  .flexRowContent--product-main {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  .flexColChild--product-name {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .flexCol--product-name {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .flexRowContent--car {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    margin-left: -25px;
+    margin-bottom: 10px;
+  }
+}
+
+.flexRowContent--productListPricing {
+  top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 21px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+/* .flexCol--filterCol {
+  min-width: 280px;
+  max-width: 350px;
+} */
+
+.flexColChild--titleWishlist {
+  margin-left: 3rem;
+}
+
+.flexRowContent--contact-us-form {
+  padding: 0 2rem 2rem 2rem;
+}
+.flexRow--contact-us-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRowContent--testIconsRow {
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.flexRowContent--main-menu-static {
+  box-shadow: 0px 1px 8px 0px #808080f5;
+}
+
+/* ============== Nissan New ================ */
+.flexRowContent--nissan-main-header {
+  background-color: rgb(50, 52, 55);
+  height: 40px;
+}
+.flexRowContent--nissan-main-menu-static {
+  background-color: #000;
+}
+/* Homepage Model Section */
+.flexRowContent--homePageModelFlex {
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .flexColChild--richTextColRight {
+    position: absolute;
+    right: 1rem;
+  }
+}
+.flexRowContent--vinNumberTextContainer {
+  justify-content: center;
+  align-items: center;
+}
+.flexCol--vinTextCol {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------PDP Page----------------------------- */
+
+.flexRowContent--breadcrumb,
+.flexRowContent--product-main {
+  padding-left: 40px !important;
+  padding-right: 50px !important;
+}
+
+.flexColChild--product-name {
+  margin-bottom: 20px;
+}
+
+.flexRow--car {
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRowContent--PDP-cart {
+  height: 60px;
+}
+.flexColChild--tire-prop-details-1 {
+  background-color: gray;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--tire-prop-details) {
+  background-color: gray;
+  font-weight: bold;
+  margin-top: 53px;
+}
+
+.flexCol--vip-content {
+  display: flex;
+  background-color: #fafafa;
+  margin-right: 20px;
+  margin-left: 20px;
+  justify-content: flex-start;
+}
+.flexCol--vip-form {
+  display: flex;
+  background-color: #fafafa;
+}
+.flexRowContent--summaryListDesktop {
+  border-bottom: 1px solid gray;
+}
+.flexCol--summaryDetailsListMobile {
+  justify-content: inherit !important;
+  align-items: baseline !important;
+}
+
+.flexCol--part-service-1,
+.flexCol--part-service-2,
+.flexCol--part-service-3 {
+  border: 1px solid gray;
+  padding-left: 20px;
+  margin-left: 3px;
+  margin-right: 30px;
+}
+
+.flexRow--nissan-para-1 {
+  border: 1px solid gray;
+  margin-top: 25px;
+  margin-right: 44px;
+  margin-left: 7px;
+  margin-bottom: 23px;
+}
+
+/* .flexColChild--service-card-1, 
+.flexColChild--service-card-2{
+  border: 1px solid gray;
+    margin-top: 1px;
+    margin-right: 44px;
+    margin-left: 7px;
+}*/
+.flexColChild--service-card-2 {
+  margin-left: 7px;
+}
+.flexColChild--tire-prop-details-1 {
+  padding-left: 25px;
+}
+.flexRow--frontier {
+  margin-top: 50px;
+}
+.flexRow--nismo-merchandise {
+  margin-top: 50px;
+}
+.flexCol--omniparts-content {
+  margin-top: -150px;
+}
+.flexRow--tire-prop-details {
+  margin-bottom: 20px;
+}
+/* ----------------------------Sales Page-------------------------------------- */
+
+.flexRowContent--combo-discount {
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+.flexRowContent--combo-discount .stretchChildrenWidth {
+  width: 330px !important;
+}
+.flexColChild--combo-discount-list1,
+.flexColChild--combo-discount-list2 {
+  width: 330px !important;
+}

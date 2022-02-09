@@ -1,0 +1,36 @@
+.responsiveGrid {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+    .responsiveGrid {
+        display: flex;
+        flex-direction: column;
+        min-width: auto;
+    }
+}
+
+.tileData {
+    padding: 15px 15px;
+    min-width: 25%;
+}
+
+.title {
+    color: darkolivegreen;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+.subTileData {
+    text-decoration: none;
+    color: inherit;
+}
+
+.subTileData:hover {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-weight: bold;
+}
